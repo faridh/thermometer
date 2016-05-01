@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C208B5581B8977082B2BA342 /* Pods_thermometer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6944793EA085D5C742AEE87 /* Pods_thermometer.framework */; };
+		D00ECA6B1CD4B11900EE9ACA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D00ECA6A1CD4B11900EE9ACA /* main.m */; };
+		D00ECA6E1CD4B11900EE9ACA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D00ECA6D1CD4B11900EE9ACA /* AppDelegate.m */; };
+		D00ECA711CD4B11900EE9ACA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00ECA701CD4B11900EE9ACA /* ViewController.m */; };
+		D00ECA741CD4B11900EE9ACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D00ECA721CD4B11900EE9ACA /* Main.storyboard */; };
+		D00ECA761CD4B11900EE9ACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00ECA751CD4B11900EE9ACA /* Assets.xcassets */; };
+		D00ECA791CD4B11900EE9ACA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D00ECA771CD4B11900EE9ACA /* LaunchScreen.storyboard */; };
+		D00ECA841CD4B11900EE9ACA /* thermometerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D00ECA831CD4B11900EE9ACA /* thermometerTests.m */; };
+		D00ECA8F1CD4B11900EE9ACA /* thermometerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D00ECA8E1CD4B11900EE9ACA /* thermometerUITests.m */; };
+		D07366C51CD4B70900F0797D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D07366C41CD4B70900F0797D /* CoreLocation.framework */; };
+		D0958BD91CD534DD00289FE2 /* APIRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = D0958BD81CD534DD00289FE2 /* APIRequester.m */; };
+		D0958BDD1CD5451000289FE2 /* ADTemperature.m in Sources */ = {isa = PBXBuildFile; fileRef = D0958BDC1CD5451000289FE2 /* ADTemperature.m */; };
+		D0958BE11CD548A600289FE2 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D0958BE01CD548A600289FE2 /* NSString+Utils.m */; };
+		D0958BE51CD5639800289FE2 /* ViewDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = D0958BE41CD5639800289FE2 /* ViewDecorator.m */; };
+		D0958BE71CD572D200289FE2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0958BE61CD572D200289FE2 /* UIKit.framework */; };
+		D0958BEA1CD5737A00289FE2 /* UIColor+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D0958BE91CD5737A00289FE2 /* UIColor+Utils.m */; };
+		D096F0D01CD653B700C50F43 /* TSMessagesDefaultDesign.json in Resources */ = {isa = PBXBuildFile; fileRef = D096F0CF1CD653B700C50F43 /* TSMessagesDefaultDesign.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D00ECA801CD4B11900EE9ACA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D00ECA5E1CD4B11900EE9ACA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D00ECA651CD4B11900EE9ACA;
+			remoteInfo = thermometer;
+		};
+		D00ECA8B1CD4B11900EE9ACA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D00ECA5E1CD4B11900EE9ACA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D00ECA651CD4B11900EE9ACA;
+			remoteInfo = thermometer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8F99C7ED7E2192732B1C4ADB /* Pods-thermometer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thermometer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-thermometer/Pods-thermometer.debug.xcconfig"; sourceTree = "<group>"; };
+		AB5B9317F393F232B44C73EF /* Pods-thermometer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thermometer.release.xcconfig"; path = "Pods/Target Support Files/Pods-thermometer/Pods-thermometer.release.xcconfig"; sourceTree = "<group>"; };
+		D00ECA661CD4B11900EE9ACA /* thermometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thermometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00ECA6A1CD4B11900EE9ACA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D00ECA6C1CD4B11900EE9ACA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D00ECA6D1CD4B11900EE9ACA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D00ECA6F1CD4B11900EE9ACA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D00ECA701CD4B11900EE9ACA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D00ECA731CD4B11900EE9ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D00ECA751CD4B11900EE9ACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D00ECA781CD4B11900EE9ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D00ECA7A1CD4B11900EE9ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D00ECA7F1CD4B11900EE9ACA /* thermometerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thermometerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00ECA831CD4B11900EE9ACA /* thermometerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = thermometerTests.m; sourceTree = "<group>"; };
+		D00ECA851CD4B11900EE9ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D00ECA8A1CD4B11900EE9ACA /* thermometerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thermometerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00ECA8E1CD4B11900EE9ACA /* thermometerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = thermometerUITests.m; sourceTree = "<group>"; };
+		D00ECA901CD4B11900EE9ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D07366C41CD4B70900F0797D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D0958BD71CD534DD00289FE2 /* APIRequester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIRequester.h; sourceTree = "<group>"; };
+		D0958BD81CD534DD00289FE2 /* APIRequester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIRequester.m; sourceTree = "<group>"; };
+		D0958BDB1CD5451000289FE2 /* ADTemperature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADTemperature.h; sourceTree = "<group>"; };
+		D0958BDC1CD5451000289FE2 /* ADTemperature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADTemperature.m; sourceTree = "<group>"; };
+		D0958BDF1CD548A600289FE2 /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		D0958BE01CD548A600289FE2 /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		D0958BE31CD5639800289FE2 /* ViewDecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewDecorator.h; sourceTree = "<group>"; };
+		D0958BE41CD5639800289FE2 /* ViewDecorator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewDecorator.m; sourceTree = "<group>"; };
+		D0958BE61CD572D200289FE2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D0958BE81CD5737A00289FE2 /* UIColor+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utils.h"; sourceTree = "<group>"; };
+		D0958BE91CD5737A00289FE2 /* UIColor+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utils.m"; sourceTree = "<group>"; };
+		D096F0CF1CD653B700C50F43 /* TSMessagesDefaultDesign.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TSMessagesDefaultDesign.json; sourceTree = "<group>"; };
+		E6944793EA085D5C742AEE87 /* Pods_thermometer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thermometer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D00ECA631CD4B11900EE9ACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0958BE71CD572D200289FE2 /* UIKit.framework in Frameworks */,
+				D07366C51CD4B70900F0797D /* CoreLocation.framework in Frameworks */,
+				C208B5581B8977082B2BA342 /* Pods_thermometer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00ECA7C1CD4B11900EE9ACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00ECA871CD4B11900EE9ACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		688236CB6C7674DB4881E51B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F99C7ED7E2192732B1C4ADB /* Pods-thermometer.debug.xcconfig */,
+				AB5B9317F393F232B44C73EF /* Pods-thermometer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D00ECA5D1CD4B11900EE9ACA = {
+			isa = PBXGroup;
+			children = (
+				D00ECA681CD4B11900EE9ACA /* thermometer */,
+				D00ECA821CD4B11900EE9ACA /* thermometerTests */,
+				D00ECA8D1CD4B11900EE9ACA /* thermometerUITests */,
+				D00ECA671CD4B11900EE9ACA /* Products */,
+				688236CB6C7674DB4881E51B /* Pods */,
+				F15B77D9228C3E8C79F8AE2B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D00ECA671CD4B11900EE9ACA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D00ECA661CD4B11900EE9ACA /* thermometer.app */,
+				D00ECA7F1CD4B11900EE9ACA /* thermometerTests.xctest */,
+				D00ECA8A1CD4B11900EE9ACA /* thermometerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D00ECA681CD4B11900EE9ACA /* thermometer */ = {
+			isa = PBXGroup;
+			children = (
+				D0958BE21CD5631500289FE2 /* View */,
+				D0958BDE1CD5488800289FE2 /* Categories */,
+				D0958BDA1CD544CE00289FE2 /* Model */,
+				D0958BD61CD534CC00289FE2 /* Controller */,
+				D00ECA6C1CD4B11900EE9ACA /* AppDelegate.h */,
+				D00ECA6D1CD4B11900EE9ACA /* AppDelegate.m */,
+				D00ECA6F1CD4B11900EE9ACA /* ViewController.h */,
+				D00ECA701CD4B11900EE9ACA /* ViewController.m */,
+				D00ECA721CD4B11900EE9ACA /* Main.storyboard */,
+				D00ECA751CD4B11900EE9ACA /* Assets.xcassets */,
+				D00ECA771CD4B11900EE9ACA /* LaunchScreen.storyboard */,
+				D00ECA7A1CD4B11900EE9ACA /* Info.plist */,
+				D00ECA691CD4B11900EE9ACA /* Supporting Files */,
+				D096F0CF1CD653B700C50F43 /* TSMessagesDefaultDesign.json */,
+			);
+			path = thermometer;
+			sourceTree = "<group>";
+		};
+		D00ECA691CD4B11900EE9ACA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D00ECA6A1CD4B11900EE9ACA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D00ECA821CD4B11900EE9ACA /* thermometerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D00ECA831CD4B11900EE9ACA /* thermometerTests.m */,
+				D00ECA851CD4B11900EE9ACA /* Info.plist */,
+			);
+			path = thermometerTests;
+			sourceTree = "<group>";
+		};
+		D00ECA8D1CD4B11900EE9ACA /* thermometerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D00ECA8E1CD4B11900EE9ACA /* thermometerUITests.m */,
+				D00ECA901CD4B11900EE9ACA /* Info.plist */,
+			);
+			path = thermometerUITests;
+			sourceTree = "<group>";
+		};
+		D0958BD61CD534CC00289FE2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D0958BD71CD534DD00289FE2 /* APIRequester.h */,
+				D0958BD81CD534DD00289FE2 /* APIRequester.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D0958BDA1CD544CE00289FE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0958BDB1CD5451000289FE2 /* ADTemperature.h */,
+				D0958BDC1CD5451000289FE2 /* ADTemperature.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0958BDE1CD5488800289FE2 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D0958BDF1CD548A600289FE2 /* NSString+Utils.h */,
+				D0958BE01CD548A600289FE2 /* NSString+Utils.m */,
+				D0958BE81CD5737A00289FE2 /* UIColor+Utils.h */,
+				D0958BE91CD5737A00289FE2 /* UIColor+Utils.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		D0958BE21CD5631500289FE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0958BE31CD5639800289FE2 /* ViewDecorator.h */,
+				D0958BE41CD5639800289FE2 /* ViewDecorator.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F15B77D9228C3E8C79F8AE2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0958BE61CD572D200289FE2 /* UIKit.framework */,
+				D07366C41CD4B70900F0797D /* CoreLocation.framework */,
+				E6944793EA085D5C742AEE87 /* Pods_thermometer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D00ECA651CD4B11900EE9ACA /* thermometer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D00ECA931CD4B11900EE9ACA /* Build configuration list for PBXNativeTarget "thermometer" */;
+			buildPhases = (
+				73D0BAD603CD64E35D7448C8 /* 📦 Check Pods Manifest.lock */,
+				D00ECA621CD4B11900EE9ACA /* Sources */,
+				D00ECA631CD4B11900EE9ACA /* Frameworks */,
+				D00ECA641CD4B11900EE9ACA /* Resources */,
+				841E04B3359926EB9CC990AE /* 📦 Embed Pods Frameworks */,
+				9B82FC6FE1D38BC9BDEE1B44 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = thermometer;
+			productName = thermometer;
+			productReference = D00ECA661CD4B11900EE9ACA /* thermometer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D00ECA7E1CD4B11900EE9ACA /* thermometerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D00ECA961CD4B11900EE9ACA /* Build configuration list for PBXNativeTarget "thermometerTests" */;
+			buildPhases = (
+				D00ECA7B1CD4B11900EE9ACA /* Sources */,
+				D00ECA7C1CD4B11900EE9ACA /* Frameworks */,
+				D00ECA7D1CD4B11900EE9ACA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D00ECA811CD4B11900EE9ACA /* PBXTargetDependency */,
+			);
+			name = thermometerTests;
+			productName = thermometerTests;
+			productReference = D00ECA7F1CD4B11900EE9ACA /* thermometerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D00ECA891CD4B11900EE9ACA /* thermometerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D00ECA991CD4B11900EE9ACA /* Build configuration list for PBXNativeTarget "thermometerUITests" */;
+			buildPhases = (
+				D00ECA861CD4B11900EE9ACA /* Sources */,
+				D00ECA871CD4B11900EE9ACA /* Frameworks */,
+				D00ECA881CD4B11900EE9ACA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D00ECA8C1CD4B11900EE9ACA /* PBXTargetDependency */,
+			);
+			name = thermometerUITests;
+			productName = thermometerUITests;
+			productReference = D00ECA8A1CD4B11900EE9ACA /* thermometerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D00ECA5E1CD4B11900EE9ACA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Adrenalin;
+				TargetAttributes = {
+					D00ECA651CD4B11900EE9ACA = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = MT766CEEZG;
+					};
+					D00ECA7E1CD4B11900EE9ACA = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D00ECA651CD4B11900EE9ACA;
+					};
+					D00ECA891CD4B11900EE9ACA = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D00ECA651CD4B11900EE9ACA;
+					};
+				};
+			};
+			buildConfigurationList = D00ECA611CD4B11900EE9ACA /* Build configuration list for PBXProject "thermometer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D00ECA5D1CD4B11900EE9ACA;
+			productRefGroup = D00ECA671CD4B11900EE9ACA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D00ECA651CD4B11900EE9ACA /* thermometer */,
+				D00ECA7E1CD4B11900EE9ACA /* thermometerTests */,
+				D00ECA891CD4B11900EE9ACA /* thermometerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D00ECA641CD4B11900EE9ACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00ECA791CD4B11900EE9ACA /* LaunchScreen.storyboard in Resources */,
+				D00ECA761CD4B11900EE9ACA /* Assets.xcassets in Resources */,
+				D096F0D01CD653B700C50F43 /* TSMessagesDefaultDesign.json in Resources */,
+				D00ECA741CD4B11900EE9ACA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00ECA7D1CD4B11900EE9ACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00ECA881CD4B11900EE9ACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73D0BAD603CD64E35D7448C8 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		841E04B3359926EB9CC990AE /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-thermometer/Pods-thermometer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B82FC6FE1D38BC9BDEE1B44 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-thermometer/Pods-thermometer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D00ECA621CD4B11900EE9ACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00ECA711CD4B11900EE9ACA /* ViewController.m in Sources */,
+				D0958BE51CD5639800289FE2 /* ViewDecorator.m in Sources */,
+				D0958BE11CD548A600289FE2 /* NSString+Utils.m in Sources */,
+				D0958BEA1CD5737A00289FE2 /* UIColor+Utils.m in Sources */,
+				D0958BDD1CD5451000289FE2 /* ADTemperature.m in Sources */,
+				D00ECA6E1CD4B11900EE9ACA /* AppDelegate.m in Sources */,
+				D00ECA6B1CD4B11900EE9ACA /* main.m in Sources */,
+				D0958BD91CD534DD00289FE2 /* APIRequester.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00ECA7B1CD4B11900EE9ACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00ECA841CD4B11900EE9ACA /* thermometerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00ECA861CD4B11900EE9ACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00ECA8F1CD4B11900EE9ACA /* thermometerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D00ECA811CD4B11900EE9ACA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D00ECA651CD4B11900EE9ACA /* thermometer */;
+			targetProxy = D00ECA801CD4B11900EE9ACA /* PBXContainerItemProxy */;
+		};
+		D00ECA8C1CD4B11900EE9ACA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D00ECA651CD4B11900EE9ACA /* thermometer */;
+			targetProxy = D00ECA8B1CD4B11900EE9ACA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D00ECA721CD4B11900EE9ACA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D00ECA731CD4B11900EE9ACA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D00ECA771CD4B11900EE9ACA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D00ECA781CD4B11900EE9ACA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D00ECA911CD4B11900EE9ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D00ECA921CD4B11900EE9ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D00ECA941CD4B11900EE9ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F99C7ED7E2192732B1C4ADB /* Pods-thermometer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = thermometer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adrenalin.thermometer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D00ECA951CD4B11900EE9ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB5B9317F393F232B44C73EF /* Pods-thermometer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = thermometer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adrenalin.thermometer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D00ECA971CD4B11900EE9ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = thermometerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adrenalin.thermometerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/thermometer.app/thermometer";
+			};
+			name = Debug;
+		};
+		D00ECA981CD4B11900EE9ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = thermometerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adrenalin.thermometerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/thermometer.app/thermometer";
+			};
+			name = Release;
+		};
+		D00ECA9A1CD4B11900EE9ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = thermometerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adrenalin.thermometerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = thermometer;
+			};
+			name = Debug;
+		};
+		D00ECA9B1CD4B11900EE9ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = thermometerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adrenalin.thermometerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = thermometer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D00ECA611CD4B11900EE9ACA /* Build configuration list for PBXProject "thermometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D00ECA911CD4B11900EE9ACA /* Debug */,
+				D00ECA921CD4B11900EE9ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D00ECA931CD4B11900EE9ACA /* Build configuration list for PBXNativeTarget "thermometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D00ECA941CD4B11900EE9ACA /* Debug */,
+				D00ECA951CD4B11900EE9ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D00ECA961CD4B11900EE9ACA /* Build configuration list for PBXNativeTarget "thermometerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D00ECA971CD4B11900EE9ACA /* Debug */,
+				D00ECA981CD4B11900EE9ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D00ECA991CD4B11900EE9ACA /* Build configuration list for PBXNativeTarget "thermometerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D00ECA9A1CD4B11900EE9ACA /* Debug */,
+				D00ECA9B1CD4B11900EE9ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D00ECA5E1CD4B11900EE9ACA /* Project object */;
+}
