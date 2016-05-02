@@ -13,6 +13,9 @@ Here is list of tools used in this project
 
 - [AFNetworking](https://github.com/AFNetworking/AFNetworking) is a delightful networking library for iOS and Mac OS X.
 
+- [OpenWeatherMap.org](http://openweathermap.org/) is an online service that provides a free API for weather data, including current weather data, forecasts, and historical data to the developers of web services and mobile applications.
+
+
 ## Dependency Management
 This project uses [CocoaPods](http://cocoapods.org) to manage dependencies, so you should open the `.xcworkspace` file rather than the `.xcodeproj` file. Note that the `Pods` directory should be checked in to version control so it’s possible to build immediately after checking out from the repository. 
 
