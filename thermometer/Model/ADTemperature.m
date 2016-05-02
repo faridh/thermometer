@@ -20,7 +20,7 @@
 
 + (NSString *)formattedTemperature:(NSNumber *)temperature {
     NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
-    [numberFormatter setMaximumFractionDigits:1];
+    [numberFormatter setMaximumFractionDigits:0];
     [numberFormatter setRoundingMode:NSNumberFormatterRoundUp];
     return [numberFormatter stringFromNumber:temperature];
 }

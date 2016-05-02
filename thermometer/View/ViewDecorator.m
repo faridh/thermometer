@@ -65,7 +65,10 @@ static ViewDecorator *_instance = nil;
     return gradient;
 }
 
-+ (UIColor *)colorForTemperature:(double)temperature
+/**
+ * Temperature must be in Farenheit
+ */
++ (UIColor *)colorForTemperature:(int)temperature
 {
     if ( temperature >= 100 ) {
         return [UIColor wineColor];
@@ -94,6 +97,22 @@ static ViewDecorator *_instance = nil;
     } else {
         return [UIColor bleachColor];
     }
+}
+
+/**
+ * Creates a new rectangle with the size of *bounds and filled with *color
+ * @return a new image
+ * @param color - The UIColor that will fill our new image
+ * @param bounds - The bounding size for our new image
+ */
++ (UIImage *)imageWithColor:(UIColor *)color AndBounds:(CGSize)bounds
+{
+    UIGraphicsBeginImageContextWithOptions(bounds, YES, 0);
+    [color setFill];
+    UIRectFill(CGRectMake(0, 0, bounds.width, bounds.height));
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
 }
 
 @end

@@ -31,14 +31,17 @@
     [super viewDidLoad];
     [self setupLocationServices];
     
-    gradientView = [UIView new];
-    gradientView.frame = _backgroundView.frame;
-    [_backgroundView insertSubview:gradientView belowSubview:_tempMainLabel];
+    // Glitter ¯\_(ツ)_/¯
+    _shimmeringTempMainView = [[FBShimmeringView alloc] initWithFrame:self.view.bounds];
+    _shimmeringTempMainView.contentView = _tempMainLabel;
+    [_backgroundView addSubview:_shimmeringTempMainView];
     
+    // City Name on init
+    _cityNameLabel.text = @"-";
     // Farenheit on init
-    _tempMainLabel.text = @"-460.0 °F";
+    _tempMainLabel.text = @"-460 °F";
     // Celsius on init
-    _tempSecondaryLabel.text = @"-273.0 °C";
+    _tempSecondaryLabel.text = @"-273 °C";
     
 }
 
@@ -52,19 +55,16 @@
 
 - (void)updateBackgroundWithTemperature:(ADTemperature *)temp
 {
-    UIColor *mainColor = [ViewDecorator colorForTemperature:[temp.temperatureF doubleValue]];
+    UIColor *mainColor = [ViewDecorator colorForTemperature:[temp.temperatureF intValue]];
 
-    [gradientView removeFromSuperview];
-    gradientView.frame = _backgroundView.frame;
+    for ( CALayer *tempLayer in gradientView.layer.sublayers ) [tempLayer removeFromSuperlayer];
+
     CAGradientLayer *gradView = [ViewDecorator gradientViewWithColors:@[(id)mainColor.CGColor,
                                                                         (id)mainColor.CGColor,
-                                                                        (id)mainColor.CGColor,
-                                                                        (id)mainColor.CGColor,
-                                                                        (id)[UIColor lightGrayColor].CGColor]
+                                                                        (id)[UIColor colorWithWhite:1.0f alpha:0.1f].CGColor]
                                                         Frame:gradientView.frame];
     [gradientView.layer addSublayer:gradView];
     _backgroundView.backgroundColor = mainColor;
-    [_backgroundView insertSubview:gradientView belowSubview:_tempMainLabel];
     
     [self.view layoutSubviews];
 }
@@ -92,6 +92,14 @@
     }
 }
 
+- (void)restartLocationManager
+{
+    [locationManager stopUpdatingLocation];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(60.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [locationManager startUpdatingLocation];
+    });
+}
+
 #pragma mark - CLLocationManagerDelegate methods
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
@@ -105,29 +113,35 @@
                            currentPlacemark = placemarks[0];
                            NSString *apiURL = [APIRequester formatWeatherAPIURLWithLatitude:currentLatitude Longitude:currentLongitude];
                            
+                           _shimmeringTempMainView.shimmering = YES;
                            [APIRequester get:apiURL WithParams:@{} Success:^(NSDictionary *response) {
                             
+                               _shimmeringTempMainView.shimmering = NO;
                                ADTemperature *temp = [ADTemperature new];
                                temp = [[ADTemperature alloc] initWithDictionary:response];
                                [self updateLabelsWithTemperature:temp];
                                [self updateBackgroundWithTemperature:temp];
+                               _cityNameLabel.text = temp.city;
                                
                            } Error:^(NSURLResponse *errorResponse, NSError *error) {
-                               NSLog(@"Error: %@", error);
+                               _shimmeringTempMainView.shimmering = NO;
+                               [TSMessage showNotificationWithTitle:@"Error"
+                                                           subtitle:@"Some error occurred. Will retry in one minute."
+                                                               type:TSMessageNotificationTypeError];
                            }];
                            
                        } else {
-                           // ToDo: !!!
+                           [self restartLocationManager];
+                           [TSMessage showNotificationWithTitle:@"Error"
+                                                       subtitle:@"Some error occurred. Please check your internet connectivity."
+                                                           type:TSMessageNotificationTypeError];
                        }
     }];
     
-    [locationManager stopUpdatingLocation];
+    [self restartLocationManager];
     [TSMessage showNotificationWithTitle:@"Notice"
-                                subtitle:@"Calculating temperature for current area."
+                                subtitle:@"Getting temperature information for current area."
                                     type:TSMessageNotificationTypeMessage];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(60.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [locationManager startUpdatingLocation];
-    });
 }
 
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
@@ -140,7 +154,9 @@
         case kCLAuthorizationStatusDenied:
         case kCLAuthorizationStatusRestricted:
         case kCLAuthorizationStatusNotDetermined:
-            [[[UIAlertView alloc] initWithTitle:@"Error!" message:@"Allow location services in order to provide the temperature for your area" delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil] show];
+            [TSMessage showNotificationWithTitle:@"Error"
+                                        subtitle:@"Turn on location services in Settings > Privacy > Location Services in order to be able to get temperature information for your area."
+                                            type:TSMessageNotificationTypeError];
         default:
             break;
     }

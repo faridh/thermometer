@@ -21,12 +21,16 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nSQ-Bb-xXa">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PfN-mo-j4J">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6c-n7-ugt">
                                         <rect key="frame" x="8" y="260" width="584" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="h8M-BX-0WX"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="80"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="70"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -39,17 +43,33 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tJ-va-lS8">
+                                        <rect key="frame" x="8" y="122" width="584" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="D4k-PK-4pV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="32"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="PfN-mo-j4J" firstAttribute="leading" secondItem="nSQ-Bb-xXa" secondAttribute="leading" id="41q-S5-AzX"/>
                                     <constraint firstItem="jqL-4i-NXU" firstAttribute="top" secondItem="Z6c-n7-ugt" secondAttribute="bottom" constant="59" id="6Vj-dY-Xmo"/>
                                     <constraint firstItem="Z6c-n7-ugt" firstAttribute="leading" secondItem="jqL-4i-NXU" secondAttribute="leading" id="JB4-dr-RaD"/>
                                     <constraint firstItem="jqL-4i-NXU" firstAttribute="top" secondItem="Z6c-n7-ugt" secondAttribute="bottom" constant="90" id="Juk-Tw-yrx"/>
                                     <constraint firstItem="jqL-4i-NXU" firstAttribute="top" secondItem="Z6c-n7-ugt" secondAttribute="bottom" constant="64" id="LMl-ls-bJl"/>
                                     <constraint firstItem="Z6c-n7-ugt" firstAttribute="centerY" secondItem="nSQ-Bb-xXa" secondAttribute="centerY" id="QnO-mc-KR6"/>
+                                    <constraint firstItem="PfN-mo-j4J" firstAttribute="top" secondItem="nSQ-Bb-xXa" secondAttribute="top" id="Ukd-SU-Qsb"/>
+                                    <constraint firstItem="PfN-mo-j4J" firstAttribute="centerX" secondItem="6tJ-va-lS8" secondAttribute="centerX" id="Uuc-Su-n8I"/>
+                                    <constraint firstItem="PfN-mo-j4J" firstAttribute="centerY" secondItem="Z6c-n7-ugt" secondAttribute="centerY" id="cR9-6L-79J"/>
                                     <constraint firstItem="Z6c-n7-ugt" firstAttribute="trailing" secondItem="nSQ-Bb-xXa" secondAttribute="trailingMargin" id="d57-7z-XuD"/>
                                     <constraint firstItem="Z6c-n7-ugt" firstAttribute="trailing" secondItem="jqL-4i-NXU" secondAttribute="trailing" id="f3j-He-Z3Q"/>
+                                    <constraint firstItem="6tJ-va-lS8" firstAttribute="leading" secondItem="Z6c-n7-ugt" secondAttribute="leading" id="kol-Hr-Ii0"/>
+                                    <constraint firstItem="6tJ-va-lS8" firstAttribute="top" secondItem="nSQ-Bb-xXa" secondAttribute="top" constant="122" id="s74-vb-6J5"/>
                                     <constraint firstItem="Z6c-n7-ugt" firstAttribute="leading" secondItem="nSQ-Bb-xXa" secondAttribute="leadingMargin" id="tba-XE-dNd"/>
+                                    <constraint firstItem="6tJ-va-lS8" firstAttribute="trailing" secondItem="Z6c-n7-ugt" secondAttribute="trailing" id="yca-XO-8NJ"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -69,6 +89,8 @@
                     </view>
                     <connections>
                         <outlet property="backgroundView" destination="nSQ-Bb-xXa" id="see-b9-OS4"/>
+                        <outlet property="cityNameLabel" destination="6tJ-va-lS8" id="Vpb-KH-Sxy"/>
+                        <outlet property="gradientView" destination="PfN-mo-j4J" id="rt2-54-EqT"/>
                         <outlet property="tempMainLabel" destination="Z6c-n7-ugt" id="j1f-AB-2zF"/>
                         <outlet property="tempSecondaryLabel" destination="jqL-4i-NXU" id="I1t-U4-xSN"/>
                     </connections>

@@ -14,12 +14,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>LBBlurredImage.xcscheme</key>
+		<key>Pods-thermometer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-thermometer.xcscheme</key>
+		<key>Shimmer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,22 +37,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>456CE53A72DB148D02377C20B2142C86</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7AE737625BCDCF7AB4CAC429867DDFD2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B4633A3DA665F92D77E2167443C4D45F</key>
+		<key>2B360E8BB4776F23E737CF3E748967C7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>C408D4E183A88B763793C217A66A1950</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C9B901248B994E2724257EA05425E1F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC2F36862EEE565F55BAFAF3213F8856</key>
 		<dict>
 			<key>primary</key>
 			<true/>

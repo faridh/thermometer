@@ -35,7 +35,7 @@
         "shadowOffsetY": 1,
         "textColor": "#727C83",
         "titleFontSize": 14,
-        "backgroundColor": "#D4DDDF"
+        "backgroundColor": "#CCCCCC"
     },
     "warning": {
         "backgroundImageName": "NotificationBackgroundWarning.png",

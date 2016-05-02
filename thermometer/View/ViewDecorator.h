@@ -14,6 +14,7 @@
 #pragma mark - Initialization
 + (ViewDecorator *)instance;
 + (CAGradientLayer *)gradientViewWithColors:(NSArray *)colors Frame:(CGRect)frame;
-+ (UIColor *)colorForTemperature:(double)temperatue;
++ (UIColor *)colorForTemperature:(int)temperatue;
++ (UIImage *)imageWithColor:(UIColor *)color AndBounds:(CGSize)bounds;
 
 @end

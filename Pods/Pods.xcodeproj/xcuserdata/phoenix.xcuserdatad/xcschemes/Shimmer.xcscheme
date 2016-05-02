@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B4633A3DA665F92D77E2167443C4D45F'
-               BlueprintName = 'LBBlurredImage'
+               BlueprintIdentifier = 'C9B901248B994E2724257EA05425E1F1'
+               BlueprintName = 'Shimmer'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'LBBlurredImage.framework'>
+               BuildableName = 'Shimmer.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

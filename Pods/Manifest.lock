@@ -15,21 +15,21 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - HexColors (2.2.1)
-  - LBBlurredImage (0.2.2)
+  - Shimmer (1.0.2)
   - TSMessages (0.9.12):
     - HexColors (~> 2.2.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
-  - LBBlurredImage
+  - Shimmer
   - TSMessages
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   HexColors: abfd172e329dab59888614ccba6f216cec59289d
-  LBBlurredImage: 700634c17922bc2d22343118e7deb6a3ca12db43
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   TSMessages: c8cc7b80f2a833af533872cd02010cac061532cc
 
-PODFILE CHECKSUM: 1a4067642914b55a33e570ffea1d72c847c73e5c
+PODFILE CHECKSUM: 0faffa98d0ae3421e1eaefac91bf3911a4881b73
 
-COCOAPODS: 1.0.0.beta.6
+COCOAPODS: 1.0.0.rc.1

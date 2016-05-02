@@ -9,6 +9,7 @@
 #import "APIRequester.h"
 #import "AppDelegate.h"
 #import <AFNetworking/AFNetworking.h>
+#import <TSMessages/TSMessage.h>
 
 #define kWeatherAPIKey @"679bd8713697628c84115b45cfa70e2d"
 
@@ -31,7 +32,7 @@
     manager.securityPolicy.allowInvalidCertificates = YES;
     manager.operationQueue.maxConcurrentOperationCount = 10;
     [manager GET:apiEndpoint parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
-        //
+        // ToDo
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         if(successBlock)
@@ -39,9 +40,9 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         if (  error.code == kCFURLErrorNotConnectedToInternet ) {
-            #warning ToDo
-//            [ViewDecorator executeAlertViewWithTitle:@"Error"
-//                                          AndMessage:@"No hay una conexión disponible a Internet."];
+            [TSMessage showNotificationWithTitle:@"Error"
+                                        subtitle:@"Internet connectivity is poor. Will retry in one minute."
+                                            type:TSMessageNotificationTypeError];
         }
         if(errorBlock)
             errorBlock(task.response, error);
@@ -64,18 +65,16 @@
     [manager.requestSerializer setAuthorizationHeaderFieldWithUsername:@"admin" password:@"Pr0piedadeS"];
     
     [manager POST:apiEndpoint parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
-        //
+        // ToDo
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         if ( successBlock )
             successBlock(responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-        #warning ToDo
-//        if (  error.code == kCFURLErrorNotConnectedToInternet ) {
-//            [ViewDecorator executeAlertViewWithTitle:@"Error"
-//                                          AndMessage:@"No hay una conexión disponible a Internet."];
-//        }
+        [TSMessage showNotificationWithTitle:@"Error"
+                                    subtitle:@"Internet connectivity is poor. Will retry in one minute."
+                                        type:TSMessageNotificationTypeError];
         if ( errorBlock )
             errorBlock(task.response, error);
     }];
