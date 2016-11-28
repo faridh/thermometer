@@ -24,6 +24,27 @@
 		D0958BE71CD572D200289FE2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0958BE61CD572D200289FE2 /* UIKit.framework */; };
 		D0958BEA1CD5737A00289FE2 /* UIColor+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D0958BE91CD5737A00289FE2 /* UIColor+Utils.m */; };
 		D096F0D01CD653B700C50F43 /* TSMessagesDefaultDesign.json in Resources */ = {isa = PBXBuildFile; fileRef = D096F0CF1CD653B700C50F43 /* TSMessagesDefaultDesign.json */; };
+		D0A185191DD3F8CE0081F120 /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A185181DD3F8CE0081F120 /* AdColony.framework */; };
+		D0A1851A1DD3FC7F0081F120 /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A185181DD3F8CE0081F120 /* AdColony.framework */; };
+		D0A1851C1DD5008F0081F120 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A1851B1DD5008F0081F120 /* EventKit.framework */; };
+		D0A1851E1DD500B60081F120 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A1851D1DD500B60081F120 /* JavaScriptCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D0A185201DD500D10081F120 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A1851F1DD500D10081F120 /* WatchConnectivity.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D0A185221DD500DD0081F120 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A185211DD500DD0081F120 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D0E873BF1DD2A61F001D5631 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E873BE1DD2A61E001D5631 /* AdSupport.framework */; };
+		D0E873C11DD2A6DE001D5631 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E873C01DD2A6DE001D5631 /* AudioToolbox.framework */; };
+		D0E873C31DD2A6E7001D5631 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E873C21DD2A6E7001D5631 /* AVFoundation.framework */; };
+		D0E873C51DD2A6EF001D5631 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E873C41DD2A6EF001D5631 /* CoreGraphics.framework */; };
+		D0E873C71DD2A6FF001D5631 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E873C61DD2A6FF001D5631 /* CoreTelephony.framework */; };
+		D0E873C91DD2A709001D5631 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E873C81DD2A709001D5631 /* iAd.framework */; };
+		D0E873CB1DD2A711001D5631 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E873CA1DD2A711001D5631 /* MediaPlayer.framework */; };
+		D0E873CD1DD2A71B001D5631 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E873CC1DD2A71B001D5631 /* MessageUI.framework */; };
+		D0E873CF1DD2A722001D5631 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E873CE1DD2A722001D5631 /* MobileCoreServices.framework */; };
+		D0E873D11DD2A72A001D5631 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E873D01DD2A72A001D5631 /* PassKit.framework */; };
+		D0E873D31DD2A732001D5631 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E873D21DD2A732001D5631 /* QuartzCore.framework */; };
+		D0E873D51DD2A739001D5631 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E873D41DD2A739001D5631 /* Social.framework */; };
+		D0E873D71DD2A73D001D5631 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E873D61DD2A73D001D5631 /* StoreKit.framework */; };
+		D0E873D91DD2A747001D5631 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E873D81DD2A747001D5631 /* SystemConfiguration.framework */; };
+		D0E873DB1DD2A74F001D5631 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E873DA1DD2A74F001D5631 /* Twitter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +96,26 @@
 		D0958BE81CD5737A00289FE2 /* UIColor+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utils.h"; sourceTree = "<group>"; };
 		D0958BE91CD5737A00289FE2 /* UIColor+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utils.m"; sourceTree = "<group>"; };
 		D096F0CF1CD653B700C50F43 /* TSMessagesDefaultDesign.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TSMessagesDefaultDesign.json; sourceTree = "<group>"; };
+		D0A185181DD3F8CE0081F120 /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdColony.framework; path = "../../Desktop/AdColony-iOS-SDK-3-master/AdColony.framework"; sourceTree = "<group>"; };
+		D0A1851B1DD5008F0081F120 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		D0A1851D1DD500B60081F120 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		D0A1851F1DD500D10081F120 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		D0A185211DD500DD0081F120 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		D0E873BE1DD2A61E001D5631 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		D0E873C01DD2A6DE001D5631 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D0E873C21DD2A6E7001D5631 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D0E873C41DD2A6EF001D5631 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D0E873C61DD2A6FF001D5631 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		D0E873C81DD2A709001D5631 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		D0E873CA1DD2A711001D5631 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		D0E873CC1DD2A71B001D5631 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		D0E873CE1DD2A722001D5631 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D0E873D01DD2A72A001D5631 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		D0E873D21DD2A732001D5631 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D0E873D41DD2A739001D5631 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		D0E873D61DD2A73D001D5631 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D0E873D81DD2A747001D5631 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D0E873DA1DD2A74F001D5631 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		E6944793EA085D5C742AEE87 /* Pods_thermometer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thermometer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -83,8 +124,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0958BE71CD572D200289FE2 /* UIKit.framework in Frameworks */,
+				D0A185221DD500DD0081F120 /* WebKit.framework in Frameworks */,
+				D0A185201DD500D10081F120 /* WatchConnectivity.framework in Frameworks */,
+				D0A1851E1DD500B60081F120 /* JavaScriptCore.framework in Frameworks */,
+				D0A1851C1DD5008F0081F120 /* EventKit.framework in Frameworks */,
+				D0A185191DD3F8CE0081F120 /* AdColony.framework in Frameworks */,
+				D0E873DB1DD2A74F001D5631 /* Twitter.framework in Frameworks */,
+				D0E873D91DD2A747001D5631 /* SystemConfiguration.framework in Frameworks */,
+				D0E873D71DD2A73D001D5631 /* StoreKit.framework in Frameworks */,
+				D0E873D51DD2A739001D5631 /* Social.framework in Frameworks */,
+				D0E873D31DD2A732001D5631 /* QuartzCore.framework in Frameworks */,
+				D0E873D11DD2A72A001D5631 /* PassKit.framework in Frameworks */,
+				D0E873CF1DD2A722001D5631 /* MobileCoreServices.framework in Frameworks */,
+				D0E873CD1DD2A71B001D5631 /* MessageUI.framework in Frameworks */,
+				D0E873CB1DD2A711001D5631 /* MediaPlayer.framework in Frameworks */,
+				D0E873C91DD2A709001D5631 /* iAd.framework in Frameworks */,
+				D0E873C71DD2A6FF001D5631 /* CoreTelephony.framework in Frameworks */,
 				D07366C51CD4B70900F0797D /* CoreLocation.framework in Frameworks */,
+				D0E873C51DD2A6EF001D5631 /* CoreGraphics.framework in Frameworks */,
+				D0E873C31DD2A6E7001D5631 /* AVFoundation.framework in Frameworks */,
+				D0E873C11DD2A6DE001D5631 /* AudioToolbox.framework in Frameworks */,
+				D0E873BF1DD2A61F001D5631 /* AdSupport.framework in Frameworks */,
+				D0958BE71CD572D200289FE2 /* UIKit.framework in Frameworks */,
 				C208B5581B8977082B2BA342 /* Pods_thermometer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0A1851A1DD3FC7F0081F120 /* AdColony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +287,26 @@
 		F15B77D9228C3E8C79F8AE2B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D0A185211DD500DD0081F120 /* WebKit.framework */,
+				D0A1851F1DD500D10081F120 /* WatchConnectivity.framework */,
+				D0A1851D1DD500B60081F120 /* JavaScriptCore.framework */,
+				D0A1851B1DD5008F0081F120 /* EventKit.framework */,
+				D0A185181DD3F8CE0081F120 /* AdColony.framework */,
+				D0E873DA1DD2A74F001D5631 /* Twitter.framework */,
+				D0E873D81DD2A747001D5631 /* SystemConfiguration.framework */,
+				D0E873D61DD2A73D001D5631 /* StoreKit.framework */,
+				D0E873D41DD2A739001D5631 /* Social.framework */,
+				D0E873D21DD2A732001D5631 /* QuartzCore.framework */,
+				D0E873D01DD2A72A001D5631 /* PassKit.framework */,
+				D0E873CE1DD2A722001D5631 /* MobileCoreServices.framework */,
+				D0E873CC1DD2A71B001D5631 /* MessageUI.framework */,
+				D0E873CA1DD2A711001D5631 /* MediaPlayer.framework */,
+				D0E873C81DD2A709001D5631 /* iAd.framework */,
+				D0E873C61DD2A6FF001D5631 /* CoreTelephony.framework */,
+				D0E873C41DD2A6EF001D5631 /* CoreGraphics.framework */,
+				D0E873C21DD2A6E7001D5631 /* AVFoundation.framework */,
+				D0E873C01DD2A6DE001D5631 /* AudioToolbox.framework */,
+				D0E873BE1DD2A61E001D5631 /* AdSupport.framework */,
 				D0958BE61CD572D200289FE2 /* UIKit.framework */,
 				D07366C41CD4B70900F0797D /* CoreLocation.framework */,
 				E6944793EA085D5C742AEE87 /* Pods_thermometer.framework */,
@@ -239,12 +321,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D00ECA931CD4B11900EE9ACA /* Build configuration list for PBXNativeTarget "thermometer" */;
 			buildPhases = (
-				73D0BAD603CD64E35D7448C8 /* 📦 Check Pods Manifest.lock */,
+				73D0BAD603CD64E35D7448C8 /* [CP] Check Pods Manifest.lock */,
 				D00ECA621CD4B11900EE9ACA /* Sources */,
 				D00ECA631CD4B11900EE9ACA /* Frameworks */,
 				D00ECA641CD4B11900EE9ACA /* Resources */,
-				841E04B3359926EB9CC990AE /* 📦 Embed Pods Frameworks */,
-				9B82FC6FE1D38BC9BDEE1B44 /* 📦 Copy Pods Resources */,
+				841E04B3359926EB9CC990AE /* [CP] Embed Pods Frameworks */,
+				9B82FC6FE1D38BC9BDEE1B44 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,7 +384,7 @@
 				TargetAttributes = {
 					D00ECA651CD4B11900EE9ACA = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = MT766CEEZG;
+						DevelopmentTeam = 4T8CJM35YW;
 					};
 					D00ECA7E1CD4B11900EE9ACA = {
 						CreatedOnToolsVersion = 7.3;
@@ -363,29 +445,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		73D0BAD603CD64E35D7448C8 /* 📦 Check Pods Manifest.lock */ = {
+		73D0BAD603CD64E35D7448C8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		841E04B3359926EB9CC990AE /* 📦 Embed Pods Frameworks */ = {
+		841E04B3359926EB9CC990AE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,14 +475,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-thermometer/Pods-thermometer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9B82FC6FE1D38BC9BDEE1B44 /* 📦 Copy Pods Resources */ = {
+		9B82FC6FE1D38BC9BDEE1B44 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -568,10 +650,89 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4T8CJM35YW;
 				INFOPLIST_FILE = thermometer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.adrenalin.thermometer;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AdColony\"",
+					"-framework",
+					"\"AdSupport\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"EventKit\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GoogleInterchangeUtilities\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleSymbolUtilities\"",
+					"-framework",
+					"\"GoogleToolboxForMac\"",
+					"-framework",
+					"\"HexColors\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MoPub\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"Shimmer\"",
+					"-framework",
+					"\"Social\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"TSMessages\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
+					"-fobjc-arc",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iki.thermo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -585,10 +746,89 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4T8CJM35YW;
 				INFOPLIST_FILE = thermometer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.adrenalin.thermometer;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AdColony\"",
+					"-framework",
+					"\"AdSupport\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"EventKit\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GoogleInterchangeUtilities\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleSymbolUtilities\"",
+					"-framework",
+					"\"GoogleToolboxForMac\"",
+					"-framework",
+					"\"HexColors\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MoPub\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"Shimmer\"",
+					"-framework",
+					"\"Social\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"TSMessages\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
+					"-fobjc-arc",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iki.thermo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;

@@ -9,12 +9,20 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import "FBShimmeringView.h"
+#import "MPAdView.h"
+#import "MPInterstitialAdController.h"
+@import GoogleMobileAds;
 
-@interface ViewController : UIViewController <CLLocationManagerDelegate>
+@interface ViewController : UIViewController <MPAdViewDelegate,
+                                                MPInterstitialAdControllerDelegate,
+                                                CLLocationManagerDelegate>
 
 
 @property (strong, nonatomic) IBOutlet UIView *backgroundView;
 @property (strong, nonatomic) IBOutlet UIView *gradientView;
+@property (nonatomic, retain) MPInterstitialAdController *interstitial;
+@property (nonatomic, strong) GADInterstitial *gInterstitial;
+@property (nonatomic, retain) MPAdView *adView;
 
 @property (strong, nonatomic) FBShimmeringView *shimmeringTempMainView;
 

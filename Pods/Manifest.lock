@@ -1,4 +1,5 @@
 PODS:
+  - AdColony (3.0.4.1)
   - AFNetworking (3.1.0):
     - AFNetworking/NSURLSession (= 3.1.0)
     - AFNetworking/Reachability (= 3.1.0)
@@ -14,22 +15,62 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - Firebase/AdMob (3.9.0):
+    - Firebase/Core
+    - Google-Mobile-Ads-SDK (= 7.14.0)
+  - Firebase/Core (3.9.0):
+    - FirebaseAnalytics (= 3.5.1)
+    - FirebaseCore (= 3.4.4)
+  - FirebaseAnalytics (3.5.1):
+    - FirebaseCore (~> 3.4)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleInterchangeUtilities (~> 1.2)
+    - GoogleSymbolUtilities (~> 1.1)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (3.4.4):
+    - GoogleInterchangeUtilities (~> 1.2)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (1.0.8)
+  - Google-Mobile-Ads-SDK (7.14.0)
+  - GoogleInterchangeUtilities (1.2.2):
+    - GoogleSymbolUtilities (~> 1.1)
+  - GoogleSymbolUtilities (1.1.2)
+  - GoogleToolboxForMac/Defines (2.1.0)
+  - GoogleToolboxForMac/NSData+zlib (2.1.0):
+    - GoogleToolboxForMac/Defines (= 2.1.0)
   - HexColors (2.2.1)
+  - mopub-ios-sdk (4.10.1):
+    - mopub-ios-sdk/MoPubSDK (= 4.10.1)
+  - mopub-ios-sdk/MoPubSDK (4.10.1)
   - Shimmer (1.0.2)
   - TSMessages (0.9.12):
     - HexColors (~> 2.2.0)
 
 DEPENDENCIES:
+  - AdColony
   - AFNetworking (~> 3.0)
+  - Firebase/AdMob
+  - Firebase/Core
+  - mopub-ios-sdk
   - Shimmer
   - TSMessages
 
 SPEC CHECKSUMS:
+  AdColony: f640f3729486a6b4f6112d6da912f4f57dea8b23
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Firebase: ff77ffb77b317c3720fef57a60e9335cebf962e6
+  FirebaseAnalytics: 6e58fc9b397664369ac7617fb0ba93fab6ba7b5b
+  FirebaseCore: d0ed25f27b6f9158eccc439f1be6f92e81207e28
+  FirebaseInstanceID: ba1e640935235e5fac39dfa816fe7660e72e1a8a
+  Google-Mobile-Ads-SDK: dbb0211c52ca02f72331b831ce4ccd218cf08748
+  GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
+  GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
+  GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
   HexColors: abfd172e329dab59888614ccba6f216cec59289d
+  mopub-ios-sdk: 54b3b9cb41118202eb69653b0ac1d011c9e2bce1
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   TSMessages: c8cc7b80f2a833af533872cd02010cac061532cc
 
-PODFILE CHECKSUM: 0faffa98d0ae3421e1eaefac91bf3911a4881b73
+PODFILE CHECKSUM: 60e03c9433cf10b1a199e8d49ae235cac36c63e4
 
-COCOAPODS: 1.0.0.rc.1
+COCOAPODS: 1.2.0.beta.1

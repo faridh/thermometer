@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>GoogleToolboxForMac.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>HexColors.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -29,30 +34,45 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>mopub-ios-sdk.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
+		<key>00103D6C821BE85971C563025527BA5D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2B360E8BB4776F23E737CF3E748967C7</key>
+		<key>10254F30616FB679AC5482952EF9BE07</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C408D4E183A88B763793C217A66A1950</key>
+		<key>45A2DE056A8F979CB415C01D260111F5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C9B901248B994E2724257EA05425E1F1</key>
+		<key>4C288AB46A735B3C27A11088ECC91B65</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FC2F36862EEE565F55BAFAF3213F8856</key>
+		<key>518E5A122F8BE5C56262F616108E98A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB57EF7D8B23701455085EC663E5FA40</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CF671F7E57B92905F1CC91D036D6B4A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

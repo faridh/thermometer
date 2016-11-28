@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 #import "ViewDecorator.h"
 #import "TSMessage.h"
+#import <AdColony/AdColony.h>
+@import GoogleMobileAds;
+@import Firebase;
 
 @interface AppDelegate ()
 
@@ -19,8 +22,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
     [ViewDecorator new];
     [TSMessage setDefaultViewController: self.window.rootViewController];
+    
+    [AdColony configureWithAppID:@"app5ca1ccc804fa4044b1"
+                         zoneIDs:@[@"vze535c70848ec45d2b5"]
+                         options:nil
+                      completion:^(NSArray<AdColonyZone *> * _Nonnull zones) {
+                          //
+                      }];
+    // [FIRApp configure];
+    [GADMobileAds configureWithApplicationID:@"ca-app-pub-3940256099942544~1458002511"];
+    
     return YES;
 }
 

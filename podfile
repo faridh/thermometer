@@ -7,6 +7,10 @@ target 'thermometer' do
   pod 'Shimmer'
   pod 'TSMessages'
   pod 'AFNetworking', '~> 3.0'
+  pod 'mopub-ios-sdk'
+  pod 'AdColony'
+  pod 'Firebase/Core'
+  pod 'Firebase/AdMob'
 end
 
 post_install do |installer|
